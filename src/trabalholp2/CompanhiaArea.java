@@ -1,6 +1,6 @@
 package trabalholp2;
 
-public class CompanhiaArea {
+public class CompanhiaArea { //Ana Patricia.
     private String nome, CNPJ;
     private Passagem[] passagens = new Passagem[50];
     private Aeronaves[] frota = new Aeronaves[50];
