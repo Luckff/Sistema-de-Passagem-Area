@@ -5,7 +5,6 @@ import java.util.ArrayList;
 public class Aeronaves {
     private int prefixo, capacidadeClasseA, capacidadeClasseB;
     private ArrayList<Voo> voos = new ArrayList();
-    private int dia=0; 
     public Aeronaves(int prefixo, int capacidadeClasseA, int capacidadeClasseB){
         this.prefixo = prefixo;
         this.capacidadeClasseA = capacidadeClasseA;
