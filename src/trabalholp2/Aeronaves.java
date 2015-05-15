@@ -1,9 +1,11 @@
 package trabalholp2;
 
+import java.util.ArrayList;
+
 public class Aeronaves {
     private int prefixo, capacidadeClasseA, capacidadeClasseB;
-    private Voo[] voos = new Voo[50];
-
+    private ArrayList<Voo> voos = new ArrayList();
+    
     public Aeronaves(int prefixo, int capacidadeClasseA, int capacidadeClasseB){
         this.prefixo = prefixo;
         this.capacidadeClasseA = capacidadeClasseA;
@@ -34,13 +36,12 @@ public class Aeronaves {
         this.capacidadeClasseB = capacidadeClasseB;
     }
 
-    public Voo[] getVoos() {
+    public ArrayList<Voo> getVoos() {
         return voos;
     }
 
-    public void setVoos(Voo[] voos) {
+    public void setVoos(ArrayList<Voo> voos) {
         this.voos = voos;
     }
-    
-    
+     
 }

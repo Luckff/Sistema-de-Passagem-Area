@@ -1,10 +1,12 @@
 package trabalholp2;
 
-public class CompanhiaArea { //Ana Patricia.
+import java.util.ArrayList;
+
+public class CompanhiaArea {
     private String nome, CNPJ;
-    private Passagem[] passagens = new Passagem[50];
-    private Aeronaves[] frota = new Aeronaves[50];
-    private Cliente[] clientes = new Cliente[50];
+    private ArrayList<Passagem> passagens = new ArrayList();
+    private ArrayList<Aeronaves> frota = new ArrayList();
+    private ArrayList<Cliente> clientes = new ArrayList();
 
     public CompanhiaArea(String nome, String CNPJ) {
         this.nome = nome;
@@ -27,20 +29,29 @@ public class CompanhiaArea { //Ana Patricia.
         this.CNPJ = CNPJ;
     }
 
-    public Aeronaves[] getFrota() {
+    public ArrayList<Passagem> getPassagens() {
+        return passagens;
+    }
+
+    public void setPassagens(ArrayList<Passagem> passagens) {
+        this.passagens = passagens;
+    }
+
+    public ArrayList<Aeronaves> getFrota() {
         return frota;
     }
 
-    public void setFrota(Aeronaves[] frota) {
+    public void setFrota(ArrayList<Aeronaves> frota) {
         this.frota = frota;
     }
 
-    public Cliente[] getClientes() {
+    public ArrayList<Cliente> getClientes() {
         return clientes;
     }
 
-    public void setClientes(Cliente[] clientes) {
+    public void setClientes(ArrayList<Cliente> clientes) {
         this.clientes = clientes;
     }
-    
+
+   
 }
