@@ -1,7 +1,7 @@
 package trabalholp2;
 
 import java.util.ArrayList;
-//AQUI
+//Novo AQUI 2
 public class Aeronaves {
     private int prefixo, capacidadeClasseA, capacidadeClasseB;
     private ArrayList<Voo> voos = new ArrayList();
