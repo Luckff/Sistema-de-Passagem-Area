@@ -5,16 +5,14 @@ public class Passagem {
     private boolean bebida;
     private String comida, classeDoAviao;
     private Cliente cliente;
-    private int precoDaPassagem;
     private Voo vooEscolhido;
 
-    public Passagem(int codigoPassagem, boolean bebida, String comida, String classeDoAviao, Cliente cliente, int precoDaPassagem, Voo vooEscolhido) {
+    public Passagem(int codigoPassagem, boolean bebida, String comida, String classeDoAviao, Cliente cliente, Voo vooEscolhido) {
         this.codigoPassagem = codigoPassagem;
         this.bebida = bebida;
         this.comida = comida;
         this.classeDoAviao = classeDoAviao;
         this.cliente = cliente;
-        this.precoDaPassagem = precoDaPassagem;
         this.vooEscolhido = vooEscolhido;
     }
 
@@ -57,14 +55,6 @@ public class Passagem {
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
-
-    public int getPrecoDaPassagem() {
-        return precoDaPassagem;
-    }
-
-    public void setPrecoDaPassagem(int precoDaPassagem) {
-        this.precoDaPassagem = precoDaPassagem;
-    }
     
     public Voo getVoo(){
         return vooEscolhido;
@@ -72,10 +62,6 @@ public class Passagem {
     
     public void setVoo(Voo vooEscolhido){
         this.vooEscolhido = vooEscolhido;
-    }
-   
-    public int converterPontos(){  //Metodo incompleto.
-        return(getPrecoDaPassagem());
     }
     
 }
