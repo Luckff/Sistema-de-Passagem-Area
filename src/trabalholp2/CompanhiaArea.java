@@ -65,14 +65,14 @@ public class CompanhiaArea {
         int codigoPassagem = 12;
         Passagem passagemCliente = new Passagem(codigoPassagem,bebida,comida,classe,clienteLogin,vooEscolhido);
         addPassagem(passagemCliente);
-        clienteLogin.setPontosCartao(clienteLogin.getPontosCartao() -  vooEscolhido.getValorReal());  
+        clienteLogin.setPontosCartao(clienteLogin.getPontosCartao() +  vooEscolhido.getValorReal());  
     }
     public void comprarPassagemPon(Cliente clienteLogin, Voo vooEscolhido, boolean bebida, String classe,String comida){
         int codigoPassagem = 13;
         if(clienteLogin.getPontosCartao() >= vooEscolhido.getValorPontos()){
             Passagem passagemCliente = new Passagem(codigoPassagem,bebida,comida,classe,clienteLogin,vooEscolhido);
             addPassagem(passagemCliente);
-            clienteLogin.setPontosCartao(clienteLogin.getPontosCartao() - vooEscolhido.getValorPontos());
+            clienteLogin.setPontosCartao(clienteLogin.getPontosCartao() + vooEscolhido.getValorPontos());
         }
         else {
             System.out.println("Pontos Insuficientes");
