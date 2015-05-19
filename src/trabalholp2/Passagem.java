@@ -6,14 +6,16 @@ public class Passagem {
     private String comida, classeDoAviao;
     private Cliente cliente;
     private int precoDaPassagem;
+    private Voo vooEscolhido;
 
-    public Passagem(int codigoPassagem, boolean bebida, String comida, String classeDoAviao, Cliente cliente, int precoDaPassagem) {
+    public Passagem(int codigoPassagem, boolean bebida, String comida, String classeDoAviao, Cliente cliente, int precoDaPassagem, Voo vooEscolhido) {
         this.codigoPassagem = codigoPassagem;
         this.bebida = bebida;
         this.comida = comida;
         this.classeDoAviao = classeDoAviao;
         this.cliente = cliente;
         this.precoDaPassagem = precoDaPassagem;
+        this.vooEscolhido = vooEscolhido;
     }
 
     public int getCodigoPassagem() {
@@ -62,6 +64,14 @@ public class Passagem {
 
     public void setPrecoDaPassagem(int precoDaPassagem) {
         this.precoDaPassagem = precoDaPassagem;
+    }
+    
+    public Voo getVoo(){
+        return vooEscolhido;
+    }
+    
+    public void setVoo(Voo vooEscolhido){
+        this.vooEscolhido = vooEscolhido;
     }
    
     public int converterPontos(){  //Metodo incompleto.
