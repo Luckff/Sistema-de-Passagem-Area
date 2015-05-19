@@ -3,10 +3,10 @@ package trabalholp2;
 public class Voo {
     private String cidadeOrigem, cidadeDestino;
     private int idVoo, valorPontos;
-    private float valorReal;
+    private int valorReal;
     private Data[] date = new Data[50];
 
-    public Voo(String cidadeOrigem, String cidadeDestino, int idVoo, int valorPontos, float valorReal) {
+    public Voo(String cidadeOrigem, String cidadeDestino, int idVoo, int valorPontos, int valorReal) {
         this.cidadeOrigem = cidadeOrigem;
         this.cidadeDestino = cidadeDestino;
         this.idVoo = idVoo;
@@ -46,11 +46,11 @@ public class Voo {
         this.valorPontos = valorPontos;
     }
 
-    public float getValorReal() {
+    public int getValorReal() {
         return valorReal;
     }
 
-    public void setValorReal(float valorReal) {
+    public void setValorReal(int valorReal) {
         this.valorReal = valorReal;
     }
 
