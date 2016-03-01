@@ -3,7 +3,7 @@ package trabalholp2;
 import java.util.ArrayList;
 
 public class Aeronaves {
-    private int prefixo, capacidadeClasseA, capacidadeClasseB;
+    private int prefixo, capacidadeClasseA, capacidadeClasseB,teste;
     private ArrayList<Voo> voos = new ArrayList();
     public Aeronaves(int prefixo, int capacidadeClasseA, int capacidadeClasseB){
         this.prefixo = prefixo;
